@@ -9,6 +9,41 @@ inquirer.prompt([
         type: 'input',
         message: 'What is the title of your application?',
         name: 'name',
+    },
+    {
+        type: 'input',
+        message: 'Please provide a description of your application.',
+        name: 'name',
+    },
+    {
+        type: 'input',
+        message: 'Please provide installation instructions. If no installation required please enter "N/A".',
+        name: 'name', 
+    },
+    {
+        type: 'input',
+        message: 'Please provide usage instructions for the user. If no usage instructions please enter "N/A"',
+        name: 'name',
+    },
+    {
+        type: 'input',
+        message: 'Please list any credits and resources utilized on the application. This also includes any collaborations. If no resources used please enter "N/A"',
+        name: 'name',
+    },
+    {
+        type: 'input',
+        message: 'Please include a screenshot of your application',
+        name: 'name',
+    },
+    {
+        type: 'input',
+        message: 'Please include a link to the application',
+        name: 'name',
+    },
+    {
+        type: 'input',
+        message: 'Please include License information',
+        name: 'name',
     }
 ])
 
