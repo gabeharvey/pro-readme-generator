@@ -8,45 +8,54 @@ inquirer.prompt([
     {
         type: 'input',
         message: 'What is the title of your application?',
-        name: 'name',
+        name: 'title',
+        default: 'Enter Title',
     },
     {
         type: 'input',
         message: 'Please provide a description of your application.',
-        name: 'name',
+        name: 'description',
+        default: 'Enter Description',
     },
     {
         type: 'input',
         message: 'Please provide installation instructions. If no installation required please enter "N/A".',
-        name: 'name', 
+        name: 'installation',
+        default: 'Enter Installation Instructions',
     },
     {
         type: 'input',
         message: 'Please provide usage instructions for the user. If no usage instructions please enter "N/A"',
-        name: 'name',
+        name: 'usage',
+        default: 'Enter Usage Instructions',
     },
     {
         type: 'input',
         message: 'Please list any credits and resources utilized on the application. This also includes any collaborations. If no resources used please enter "N/A"',
-        name: 'name',
+        name: 'credits',
+        default: 'Enter Credits',
     },
     {
         type: 'input',
         message: 'Please include a screenshot of your application',
-        name: 'name',
+        name: 'screenshot',
+        default: 'Include Screenshot'
     },
     {
         type: 'input',
         message: 'Please include a link to the application',
-        name: 'name',
+        name: 'link',
+        default: 'Enter Link to Application'
     },
     {
         type: 'input',
         message: 'Please include License information',
-        name: 'name',
+        name: 'license',
+        default: 'Enter License Information',
     }
-])
+]);
 
+console.log(answers);
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
