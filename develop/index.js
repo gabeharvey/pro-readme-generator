@@ -2,13 +2,14 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
+const generateMarkdown = require('./utils/generateMarkdown');
+
 // TODO: Create an array of questions for user input
-// const questions = [];
-inquirer.prompt([
+const questions = [
     {
         type: 'input',
         message: 'What is the title of your application?',
-        name: 'Title',
+        name: 'title',
         default: 'Enter Title',
     },
     {
@@ -53,14 +54,21 @@ inquirer.prompt([
         name: 'license',
         default: 'Enter License Information',
     },
-]);
+];
 
-console.log(response);
+// console.log(responses);
 // TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 // TODO: Create a function to initialize app
-//function init() {}
+function init() {
+    inquirer.prompt(questions).then((responses) => {
+        console.log("Professional ReadMe File Generating");
+        writeToFile('./final/README.md', generateMarkdown({...responses}));
+    });
+}
 
 // Function call to initialize app
-//init();
+init();
