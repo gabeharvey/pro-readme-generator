@@ -39,7 +39,7 @@ const questions = [
     {
         type: 'input',
         message: 'Please list all Contributors for your project:',
-        name: 'contributors',
+        name: 'contributing',
         default: 'Contributors',
     },
     {
@@ -50,9 +50,15 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please include a test to the application',
-        name: 'test',
+        message: 'Please include a test to the application:',
+        name: 'tests',
         default: 'Enter License Information',
+    },
+    {
+        type: 'input',
+        message: 'Please enter your Name:',
+        name: 'name',
+        default: 'Your Name Here',
     },
     {
         type: 'input',
@@ -64,7 +70,7 @@ const questions = [
         type: 'input',
         message: 'Please enter your GitHub username:',
         name: 'gitHub',
-        default: "GitHub Username"
+        default: "GitHub Username",
     },
 ];    
         
