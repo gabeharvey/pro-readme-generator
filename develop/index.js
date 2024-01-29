@@ -32,30 +32,42 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please list any credits and resources utilized on the application. This also includes any collaborations. If no resources used please enter "N/A":',
-        name: 'credits',
-        default: 'Enter Credits',
+        message: 'Please select License Information:',
+        name: 'license',
+        default: 'Enter License Information',
     },
     {
         type: 'input',
-        message: 'Please include a screenshot of your application:',
-        name: 'screenshot',
-        default: 'Include Screenshot'
+        message: 'Please list all Contributors for your project:',
+        name: 'contributors',
+        default: 'Contributors',
     },
     {
         type: 'input',
         message: 'Please include a link to the application:',
         name: 'link',
-        default: 'Enter Link to Application'
+        default: 'Enter Link to Application',
     },
     {
         type: 'input',
-        message: 'Please include License information:',
-        name: 'license',
+        message: 'Please include a test to the application',
+        name: 'test',
         default: 'Enter License Information',
     },
-];
-
+    {
+        type: 'input',
+        message: 'Please enter your email address:',
+        name: 'email',
+        default: "Email Address",
+    },
+    {
+        type: 'input',
+        message: 'Please enter your GitHub username:',
+        name: 'gitHub',
+        default: "GitHub Username"
+    },
+];    
+        
 // console.log(responses);
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
