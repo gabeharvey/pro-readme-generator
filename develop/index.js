@@ -8,7 +8,7 @@ inquirer.prompt([
     {
         type: 'input',
         message: 'What is the title of your application?',
-        name: 'title',
+        name: 'Title',
         default: 'Enter Title',
     },
     {
@@ -52,15 +52,15 @@ inquirer.prompt([
         message: 'Please include License information',
         name: 'license',
         default: 'Enter License Information',
-    }
+    },
 ]);
 
-console.log(answers);
+console.log(response);
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+//function init() {}
 
 // Function call to initialize app
-init();
+//init();
