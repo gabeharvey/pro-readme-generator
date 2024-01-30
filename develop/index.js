@@ -34,7 +34,7 @@ const questions = [
         type: 'checkbox',
         message: 'Please select License Information:',
         name: 'license',
-        choices: ['Apache2.0', 'BSD2', 'BSD3', 'EPL1.0', 'IPL1.0', 'MIT', 'MPL2.0', 'Perl', 'None'],
+        choices: ['Apache2.0', 'BSD2', 'BSD3', 'EPL1.0', 'GPLv3', 'IPL1.0', 'MIT', 'MPL2.0', 'Perl', 'None'],
     },
     {
         type: 'input',
@@ -52,7 +52,7 @@ const questions = [
         type: 'input',
         message: 'Please include a test to the application:',
         name: 'tests',
-        default: 'Enter License Information',
+        default: 'Enter Test Information',
     },
     {
         type: 'input',
