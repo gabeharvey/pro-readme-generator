@@ -34,7 +34,7 @@ const questions = [
         type: 'checkbox',
         message: 'Please select License Information:',
         name: 'license',
-        choices: ['Apache2.0', 'BSD2', 'BSD3', 'EPL1.0', 'GPLv3', 'IPL1.0', 'MIT', 'MPL2.0', 'Perl', 'None'],
+        choices: ['Apache2.0', 'BSD2', 'BSD3', 'EPL1.0', 'GPLv3', 'MIT', 'MPL2.0', 'Perl', 'None'],
     },
     {
         type: 'input',
@@ -83,7 +83,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((responses) => {
-        console.log("...Professional README File Generating...");
+        console.log("Professional README File Generating . . .");
         writeToFile('./final/README.md', generateMarkdown({...responses}));
     });
 }

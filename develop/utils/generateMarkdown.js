@@ -11,8 +11,6 @@ function renderLicenseBadge(license) {
     return '![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)';
   } else if (license == 'GPLv3') {
     return '![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)';
-  } else if (license == 'IPL1.0') {
-    return '![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)';
   } else if (license == 'MIT') {
     return '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
   } else if (license == 'MPL2.0') {
@@ -28,7 +26,21 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license == 'Apache2.0') {
     return 'https://www.apache.org/licenses/LICENSE-2.0';
-  } else if (license === '')
+  } else if (license == 'BSD2') {
+    return 'https://opensource.org/licenses/BSD-2-Clause';
+  } else if (license == 'BSD3') {
+    return 'https://opensource.org/licenses/BSD-3-Clause';
+  } else if (license == 'EPL1.0') {
+    return 'https://opensource.org/licenses/EPL-1.0';
+  } else if (license == 'GPLv3') {
+    return 'https://www.gnu.org/licenses/gpl-3.0';
+  } else if (license == 'MIT') {
+    return 'https://opensource.org/licenses/MIT';
+  } else if (license == 'MPL2.0') {
+    return 'https://opensource.org/licenses/MPL-2.0';
+  } else if (license == 'Perl') {
+    return 'https://opensource.org/licenses/Artistic-2.0';
+  }
   return '';
 }
 
