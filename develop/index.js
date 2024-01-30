@@ -31,10 +31,10 @@ const questions = [
         default: 'Enter Usage Instructions',
     },
     {
-        type: 'input',
+        type: 'checkbox',
         message: 'Please select License Information:',
         name: 'license',
-        default: 'Enter License Information',
+        choices: ['Apache2.0', 'BSD2', 'BSD3', 'EPL1.0', 'IPL1.0', 'MIT', 'MPL2.0', 'Perl', 'None'],
     },
     {
         type: 'input',
