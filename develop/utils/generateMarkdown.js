@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// This function renders the license badge
 function renderLicenseBadge(license) {
   if (license == 'Apache2.0') {
     return '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
@@ -21,8 +20,7 @@ function renderLicenseBadge(license) {
   return '';
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// This function renders a link to the license
 function renderLicenseLink(license) {
   if (license == 'Apache2.0') {
     return 'https://www.apache.org/licenses/LICENSE-2.0';
@@ -44,8 +42,7 @@ function renderLicenseLink(license) {
   return '';
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// This function renders phrase that explains what license is used in the application
 function renderLicenseSection(license) {
   if (license != 'None') {
     return `${license} is the license for this application.`
@@ -53,7 +50,7 @@ function renderLicenseSection(license) {
   return '';
 }
 
-// TODO: Create a function to generate markdown for README
+// This function generates markdown for the README
 function generateMarkdown(data) {
   return `# ${data.title}
 
