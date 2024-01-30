@@ -50,7 +50,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please include a test to the application:',
+        message: 'Please include test information for application if applicable. If no test information please enter "N/A":',
         name: 'tests',
         default: 'Enter Test Information',
     },
